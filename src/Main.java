@@ -26,6 +26,10 @@ public class Main {
     public static void setHands() {
         three.setHand(two.getHand());
         two.setHand(RockPaperScissors.values()[new Random().nextInt(RockPaperScissors.values().length)]);
+        System.out.println("Rock: " +one.hand);
+        System.out.println("Random: " +two.hand);
+        System.out.println("Copy: " +three.hand);
+        System.out.println("________________");
     }
 
     public static void checkWinner() {
